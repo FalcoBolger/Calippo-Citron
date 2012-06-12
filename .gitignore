@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 node_modules
 .c9*
 
+=======
+>>>>>>> 1e324543ffd07406d63eb429a3420d89fb9be079
 lib-cov
 *.seed
 *.log
@@ -15,5 +18,10 @@ pids
 logs
 results
 
+<<<<<<< HEAD
 npm-debug.log
 .settings
+=======
+node_modules
+npm-debug.log
+>>>>>>> 1e324543ffd07406d63eb429a3420d89fb9be079
