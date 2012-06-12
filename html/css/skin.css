@@ -1,0 +1,93 @@
+.layout{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.layout .header{
+    color: #CCCCFF;
+    padding: 10px;
+    font-family: 'Tangerine', serif;
+    font-size: 72px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.layout .body{
+    padding: 10px;
+    //-moz-border-radius: 20px;
+    //-webkit-border-radius: 20px;
+}
+
+.layout .slideshow{
+    height: 150px;
+    border: solid 1px #CCCCFF;
+    //-moz-border-radius: 20px;
+    //-webkit-border-radius: 20px;
+}
+
+.layout .container{
+    padding: 10px;
+}
+
+.layout .navigation{
+    min-width: 120px;
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.layout .navigation a:link,
+.layout .navigation a:visited{
+    color: #00FF00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.layout .navigation a:hover{
+    color: green;
+    margin: 0 10px;
+}
+
+.layout .navigation li{
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+.layout .content{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    min-width: 480px;
+}
+
+.layout .content .article{
+}
+
+.layout .content .article .title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.layout .content .article .text{
+    font-size: 12px;
+}
+
+.layout .content .article .info{
+    font-size: 10px;
+    padding: 10px;
+}
+
+.layout .information{    
+}
+
+.layout .information .photo{
+}
+
+.layout .information .about{
+    float: right;
+}
+
+.layout .footer{
+    float: right;
+    color: #CCCCCC;
+}

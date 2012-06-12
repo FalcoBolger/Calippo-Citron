@@ -1,0 +1,12 @@
+{
+    "name": "calippo-citron",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "",
+        "jade": ""
+    },
+    "engines": {
+        "node": "0.6.18",
+        "npm":  "1.1.9"
+    }
+}
