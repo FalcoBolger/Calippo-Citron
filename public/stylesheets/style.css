@@ -1,0 +1,32 @@
+body {
+    padding: 20px;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.container {
+}
+
+.navigation a:link,
+.navigation a:visited {
+    color: #00FF00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navigation a:hover{
+    color: green;
+    margin: 0 10px;
+}
+
+.navigation li{
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+.footer {
+    color: #CCCCCC;
+}

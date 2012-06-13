@@ -4,7 +4,13 @@
  * @version 0.0.1
 */
 
+/**
+ * Module dependencies
+ */
+ 
 var express = require('express');
+//var stylus = require('stylus');
+var routes = require('./routes');
 
 // Still need to investigate multilingual options
 
@@ -13,7 +19,7 @@ var express = require('express');
 
 //i18next.init(); 
 
-var app = express.createServer();
+var app = module.exports = express.createServer();
 
 app.configure(function () {
   
@@ -21,9 +27,29 @@ app.configure(function () {
 
     // Views configuration       
 
-    app.set("view options", { layout: false });     // Change options object later
+    //app.set("view options", { layout: false });     // Change options object later
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
+    
+    app.use(express.favicon());
+    
+    app.use(express.logger('dev'));
+    
+    //app.use(express.staticCache({maxObjects: 100, maxLength: 512}));
+    
+//    app.use(stylus.middleware({
+//        src: __dirname + '/views/stylus',
+//        dest: __dirname + '/public/stylesheets'
+//    }));
+    
+    /*
+    * Folders:
+    *   /public
+    *   /public/stylesheets
+    *   /public/javascripts
+    */
+    
+    app.use(express.static(__dirname + '/public'));
     
     // Lingua configuration
 
@@ -38,17 +64,10 @@ app.configure(function () {
     app.use(express.bodyParser());      //
     app.use(express.methodOverride());  //
     app.use(app.router);                //
+    //app.use(express.directory(__dirname + '/public'));
     
     //app.use(i18next.handle);
-    
-    /*
-    * Folders:
-    *   /public
-    *   /public/stylesheets
-    *   /public/javascripts
-    */
-    
-    app.use(express.static(__dirname + '/public'));
+        
 });
 
 //
@@ -71,176 +90,46 @@ app.configure('production', function(){
 
 //i18next.registerAppHelper(app);
 
-app.listen(process.env.PORT || 8000);
-
-// Simple DB for testing purposes. This will be changed when the real DB would
-//  be ready
-
-var users = [
-    // Privileged user
-    {
-        id: "calippo.citron",
-        pwd: "calippo.citron",
-        email: "calippo.citron@gmail.com",
-        roles: ["canPost"]
-    },
-    // Normal user
-    {
-        id: "anon.user",
-        pwd: "anon.user",
-        email: "anon.user@gmail.com",
-        roles: []
-    }
-];
-var articles = [];
+/**
+ * Routes
+ */
 
 // Get the initial view of the application, the 'index.html' static page
 //  corresponding to the 'Home' link
 
-app.get('/', function (req, res) {
+app.get('/', routes.index);
 
-    // This static page will show some information about us, the wedding or
-    //  something like that
+// Show the login page
 
-    "use strict";
-    
-    res.render('index', {pageTitle:'Victor and Yasmina\'s Wedding'});
-});
-
-// Read all the created Blogposts, the 'news.html' dynamic page corresponding to
-//  the 'News' link
-
-app.get('/articles', function (req, res) {
-    
-    // Here the DB will requested to provide all the articles stored in it, and
-    //  the use of pagination will be compulsory.
-    //  Users of the site should be able to add comments to each article
-    //  Modify to implement the Commander Pattern, GetArticlesCommand
-
-    "use strict";
-
-    res.send(articles);
-});
+app.get('/login', routes.getlogin);
 
 // Get the information related to the Bouddhist ceremony, the 'ceremony.html'
 //  page corresponding to the 'Ceremony' link
 
-app.get('/ceremony', function (req, res) {
-
-    // This static page will show the information about the Bouddhist ceremony,
-    //  may be the same that in the 'livret'
-
-    "use strict";
-
-    res.render('ceremony', {pageTitle: 'Ceremony'});
-});
+app.get('/ceremony', routes.ceremony);
 
 // Get the information related to the Reception, the 'reception.html' page
 //  corresponding to the 'Reception' link
 
-app.get('/reception', function (req, res) {
-
-    // This static page will show the information about the reception, how to
-    //  arrive, the place itself, etc.
-
-    "use strict";
-
-    res.render('reception', {pageTitle: 'Reception'});
-});
-
-app.get('/login', function (req, res) {
-    
-    "use strict";
-    
-    res.render('login', {pageTitle: 'Login'});
-});
+app.get('/reception', routes.reception);
 
 // Login to the application
 
-app.post('/login', function (req, res) {
+app.post('/login', routes.postLogin);
 
-    // This is the application form to authenticate users as being able to do
-    //  some tasks like posting new articles to the application.
-    // Create the session object or a cookie
+// Read all the created Blogposts, the 'news.html' dynamic page corresponding to
+//  the 'News' link
 
-    "use strict";
-    
-    console.log(req.body);
-    
-    // First check for session object or cookie
-    
-    // This will change to meet the DB
-    
-    var user = (function (username) {
-        var i;
-        for (i=0; i<users.length; i++) {
-            if (users[i].id === username) {
-                return users[i];
-            }
-        }
-    })(req.body.username);
-    
-    // This will change to meet the DB
-    
-    var canPost = (function (user) {
-        var i;
-        for (i=0; i<user.roles.length; i++) {
-            if (user.roles[i] === "canPost") {
-                return true
-            }
-        }
-        return false;
-    })(user);
-    
-    if (user instanceof Object && user.pwd === req.body.password && canPost) {        
-        res.send("Authenticated");
-    } else {
-        res.send("Not Authenticated");
-    }
-    
-    // Implement some kind of captcha
-    
-});
+app.get('/articles', routes.articles);
 
-app.get('/article/new', function (req,res) {
-     if (!req.cookies || req.cookies.articleaccess || 
-            req.cookies.articleacces !== "AOK") {
-        res.redirect('/login');
-    } else {
-        res.render('article', {pageTitle: 'New Article'});
-    }
-});
+// Create a new article page
+
+app.get('/article/new', routes.newArticle);
 
 // Create a new Blogpost
 
-app.post('/article', function (req, res) {
+app.post('/article', routes.article);
 
-    // This is the entry point for adding new articles to the Blog. Nees to 
-    //  include an authorization mechanism (sessions, cookies, ...)
-
-    "use strict";
-    
-    console.log(req.body);
-
-    // Modify to implement the Commander Pattern
-    
-    if (req.body && req.body.article) {
-        articles.push(req.body.article);
-        if (req.body.article.published === "true") {
-            res.send({
-                status: "ok",
-                message: "Article Published"
-            });
-        } else {
-            res.send({
-                status: "ok",
-                message: "Article Received"
-            });
-        }
-    } else {
-        res.send({
-            status: "nok",
-            message: "No Articles Received"
-        });
-    }
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

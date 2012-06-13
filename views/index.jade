@@ -1,14 +1,12 @@
-!!!5
-html(lang="en")
-    head
-        title= pageTitle
-    body
-        div: h1 Victor and Yasmina's Wedding Web Site!
-        div
+body
+    include header
+    div.container
+        div.navigation
             ul
                 li: a(href='/') Home
                 li: a(href='/articles') Articles
                 li: a(href='/article/new') New Article
                 li: a(href='/reception') Reception
                 li: a(href='/ceremony') Ceremony
-        div: a(href='/') Home
+    div: a(href='/') Home
+    include footer
