@@ -22,7 +22,7 @@ var express  = require('express'),
 var app = module.exports = express.createServer();
 
 app.configure(function () {
-  
+
     "use strict";
 
     // Views configuration
@@ -131,5 +131,7 @@ app.get('/article/new', routes.newArticle);
 app.post('/article', routes.article);
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+    "use strict";
+
+    console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

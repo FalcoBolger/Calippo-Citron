@@ -1,0 +1,59 @@
+<mockup version="1.0" skin="sketch" measuredW="832" measuredH="609" mockupW="800" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="32" y="9" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20and%20Yasmina%27s%20Wedding</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="147" y="118" w="-1" h="-1" measuredW="536" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20and%20Yasmina%27s%20Wedding</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="54" y="183" w="-1" h="-1" measuredW="39" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>index.html%26bm%3Bindex.html.bmml%26bm%3Bindex.html.bmml%26bm%3Bindex.html.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2222%2C174%2C61%2C195%22%20href%3D%22index.html.bmml%22%20alt%3D%22index.html%22%20id%3D%222%22/%3E</map>
+        <text>Home</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="54" y="204" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>ceremony.html%26bm%3Bceremony.html.bmml%26bm%3Bceremony.html.bmml%26bm%3Bceremony.html.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2222%2C195%2C88%2C216%22%20href%3D%22ceremony.html.bmml%22%20alt%3D%22ceremony.html%22%20id%3D%223%22/%3E</map>
+        <text>Ceremony</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Link" x="54" y="225" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Reception</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="54" y="246" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>News</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="634" y="553" w="-1" h="-1" measuredW="168" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20Tabuenca%20Calvo%202012</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::SubTitle" x="147" y="183" w="-1" h="-1" measuredW="108" measuredH="33" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Subtitle</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Paragraph" x="147" y="216" w="655" h="337" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20paragraph%20of%20text.%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0AA%20_second_%20%5Brow%5D%20of%20*text*.</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="442" y="217" w="360" h="189" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,172 @@
+<mockup version="1.0" skin="sketch" measuredW="829" measuredH="2065" mockupW="800" mockupH="2048">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="29" y="17" w="800" h="2048" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20and%20Yasmina%27s%20Wedding</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="199" y="118" w="550" h="-1" measuredW="536" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20and%20Yasmina%27s%20Wedding</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="54" y="183" w="-1" h="-1" measuredW="39" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>index.html%26bm%3Bindex.html.bmml%26bm%3Bindex.html.bmml%26bm%3Bindex.html.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2225%2C166%2C64%2C187%22%20href%3D%22index.html.bmml%22%20alt%3D%22index.html%22%20id%3D%222%22/%3E</map>
+        <text>Home</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="54" y="204" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>ceremony.html%26bm%3Bceremony.html.bmml%26bm%3Bceremony.html.bmml%26bm%3Bceremony.html.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2225%2C187%2C91%2C208%22%20href%3D%22ceremony.html.bmml%22%20alt%3D%22ceremony.html%22%20id%3D%223%22/%3E</map>
+        <text>Ceremony</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Link" x="54" y="225" w="-1" h="-1" measuredW="65" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Reception</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="54" y="246" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>News</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="634" y="2009" w="-1" h="-1" measuredW="168" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20Tabuenca%20Calvo%202012</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::SubTitle" x="387" y="213" w="-1" h="-1" measuredW="194" measuredH="33" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Title%20of%20the%20article</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Paragraph" x="147" y="282" w="655" h="376" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Non%20hac%20natoque%20tristique%20ut%20duis%21%20Turpis%20dolor%20amet%20placerat%20aenean%20mauris%20ac%2C%20cras%20facilisis%20sit%20porttitor%20velit%2C%20eros%20vel%20habitasse%2C%20quis%20quis%20dolor%20turpis%20est%2C%20et%20dolor%2C%20non%20nisi%2C%20magna%20cursus%20mid%2C%20duis%20sed%20cras%2C%20porttitor%20magna%20ultricies%20pid%2C%20enim%20vel%3F%20Sed%20mid.%20Montes%2C%20odio.%20Ut%20egestas%3F%20Amet%20nec%20magna%20est%2C%20vel%20et%20scelerisque%2C%20tincidunt%20pellentesque%20enim%21%20Mus%20nascetur%2C%20in%20dis%20mattis%20pulvinar%20vel%20in%21%20Ultrices%20turpis%2C%20integer%20non%21%20Etiam%20turpis%2C%20eu.%20A%20platea.%20Adipiscing%2C%20placerat%21%20Scelerisque%20in%20placerat%21%20Augue%20sociis%20nec%20mid%20dis.%20Risus%20lundium%20ridiculus%20integer%20eros%2C%20lorem%20cras%20non%20est%20nisi%2C%20in%20elit%20turpis%20augue%20ac%20porttitor%20scelerisque%2C%20ac%20nunc%20dapibus.%20Et%2C%20magna%20quis%20tincidunt%20tempor%20parturient%20et%21%20Scelerisque%20cum%20dictumst%20duis%20nisi%20porttitor%20lundium%20mus.%0A%20%0APorta%20tincidunt.%20Pid%20sit%20odio%20dignissim%20turpis%20lectus%20diam%20ut%20est%20nec%20natoque%20magnis%20sociis%20arcu%20vut%20parturient%20turpis%20tortor%20dignissim%20porttitor%20scelerisque%2C%20a%20odio%20proin%20enim%20vut%2C%20vel.%20Nec%20tempor%20turpis%2C%20scelerisque%20vel%21%20Vel%20eu%21%20Pulvinar%20pid%20aliquet.%20Purus%20dapibus%20porta%20et%20porttitor%20porttitor%20eros%20odio%20eu%20velit%20turpis%2C%20urna%20etiam%20porta%20enim%20porta%20enim%20ac%2C%20adipiscing%20odio%21%20Urna%20nec%20purus%20dapibus%20dignissim%20ridiculus%20magnis%20dolor%2C%20ridiculus%20vel%2C%20auctor%20elit%21%20Platea%20adipiscing%20diam%20a%3F%20Sagittis%20integer%20eu%20enim%3F%20Ut%3F%20Dolor%20nec%2C%20non%20aliquet%20magnis%20habitasse%20odio%20auctor%2C%20nisi%21%20Ac%20aliquet%20augue%20est%20auctor%20magna%3F%20Nec%20ultrices%20sociis.%20Ac%3F%20Nascetur%20sed%2C%20penatibus%20augue%20turpis%2C%20pid%20ultrices%20nunc%21%20Turpis%20lacus%20amet%21%20Dolor%20mus%20amet%20adipiscing%20dapibus%20mid%20elit%20platea%20pid.%0A%20%0ATurpis%20sociis%20a%20a%20adipiscing%2C%20odio%2C%20porttitor%20mattis%20pellentesque%20urna%20ultrices%3F%20Sed%20facilisis%20platea%20platea%20aliquam%20ut%21%20In%20dolor.%20Urna%2C%20sit%20et%20ultricies%20tortor%2C%20sociis%20habitasse%20amet%3F%20Nec%20auctor%3F%20Sed%20parturient%20sagittis%2C%20tortor%3F%20Et%2C%20dapibus%20velit%20lorem%20urna%2C%20penatibus%20rhoncus%20pellentesque%20platea%20rhoncus%20porta%20sit%2C%20duis%20mauris%3F%20Rhoncus%20odio.%20Enim%20est%20mus%20ultricies%20a%20magnis.%20Tempor%20augue%20placerat%20sit%2C%20ac%20lorem%20aliquet%3F%20Tincidunt%2C%20ut.%20Ridiculus%20ut%20porta%2C%20lacus%20ac%20ultricies%2C%20nascetur%3F%20Enim%20mauris%20tempor%2C%20purus%20in%20mid%2C%20nunc%20nunc%2C%20elementum%20porta%20quis%20duis%21%20Magna%20in%20dis%20etiam%20adipiscing%20lectus%2C%20nec%20aliquam%20etiam.%20Turpis%20augue%20ac%20elementum%20porttitor%20turpis%20pellentesque%20placerat%20nisi%20dictumst%2C%20et%20odio%20sit%20tincidunt%20rhoncus%20pid%20massa%20rhoncus%20lectus%20proin%20nec%2C%20dictumst%20aenean%20amet%20non%20et%20porttitor.%0A%20%0AA%20_second_%20%5Brow%5D%20of%20*text*.</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="147" y="219" w="-1" h="-1" measuredW="105" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3C%20previous%20article</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="720" y="219" w="-1" h="-1" measuredW="82" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>next%20article%20%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::SubTitle" x="147" y="691" w="-1" h="-1" measuredW="100" measuredH="28" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>20</size>
+        <text>Comments</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="166" y="719" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>John%20Doe%20said%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Paragraph" x="166" y="740" w="636" h="117" measuredW="200" measuredH="80" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Non%20hac%20natoque%20tristique%20ut%20duis%21%20Turpis%20dolor%20amet%20placerat%20aenean%20mauris%20ac%2C%20cras%20facilisis%20sit%20porttitor%20velit%2C%20eros%20vel%20habitasse%2C%20quis%20quis%20dolor%20turpis%20est%2C%20et%20dolor%2C%20non%20nisi%2C%20magna%20cursus%20mid%2C%20duis%20sed%20cras%2C%20porttitor%20magna%20ultricies%20pid%2C%20enim%20vel%3F%20Sed%20mid.%20Montes%2C%20odio.%20Ut%20egestas%3F%20Amet%20nec%20magna%20est%2C%20vel%20et%20scelerisque%2C%20tincidunt%20pellentesque%20enim%21%20Mus%20nascetur%2C%20in%20dis%20mattis%20pulvinar%20vel%20in%21%20Ultrices%20turpis%2C%20integer%20non%21%20Etiam%20turpis%2C%20eu.%20A%20platea.%20Adipiscing%2C%20placerat%21%20Scelerisque%20in%20placerat%21%20Augue%20sociis%20nec%20mid%20dis.%20Risus%20lundium%20ridiculus%20integer%20eros%2C%20lorem%20cras%20non%20est%20nisi%2C%20in%20elit%20turpis%20augue%20ac%20porttitor%20scelerisque%2C%20ac%20nunc%20dapibus.%20Et%2C%20magna%20quis%20tincidunt%20tempor%20parturient%20et%21%20Scelerisque%20cum%20dictumst%20duis%20nisi%20porttitor%20lundium%20mus.</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="669" y="695" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Show/Hide%20Comments</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="147" y="246" w="-1" h="-1" measuredW="43" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Author</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="768" y="246" w="-1" h="-1" measuredW="34" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="252" y="878" w="-1" h="-1" measuredW="82" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Foo%20Bar%20said%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Paragraph" x="252" y="899" w="550" h="51" measuredW="200" measuredH="80" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Non%20hac%20natoque%20tristique%20ut%20duis%21%20Turpis%20dolor%20amet%20placerat%20aenean%20mauris%20ac%2C%20cras%20facilisis%20sit%20porttitor%20velit%2C%20eros%20vel%20habitasse%2C%20quis%20quis%20dolor%20turpis%20est%2C%20et%20dolor%2C%20non%20nisi%2C%20magna%20cursus%20mid%2C%20duis%20sed%20cras%2C%20porttitor%20magna%20ultricies%20pid%2C%20enim%20vel%3F%20Sed%20mid.</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Label" x="252" y="986" w="-1" h="-1" measuredW="92" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Joan%20Doe%20said%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Paragraph" x="252" y="1007" w="550" h="51" measuredW="200" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Non%20hac%20natoque%20tristique%20ut%20duis%21%20Turpis%20dolor%20amet%20placerat%20aenean%20mauris%20ac%2C%20cras%20facilisis%20sit%20porttitor%20velit%2C%20eros%20vel%20habitasse%2C%20quis%20quis%20dolor%20turpis%20est%2C%20et%20dolor%2C%20non%20nisi%2C%20magna%20cursus%20mid%2C%20duis%20sed%20cras%2C%20porttitor%20magna%20ultricies%20pid%2C%20enim%20vel%3F%20Sed%20mid.</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Label" x="344" y="1079" w="90" h="21" measuredW="90" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>John%20Doe%20said%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Paragraph" x="344" y="1100" w="467" h="54" measuredW="200" measuredH="80" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Porta%20tincidunt.%20Pid%20sit%20odio%20dignissim%20turpis%20lectus%20diam%20ut%20est%20nec%20natoque%20magnis%20sociis%20arcu%20vut%20parturient%20turpis%20tortor%20dignissim%20porttitor%20scelerisque%2C%20a%20odio%20proin%20enim%20vut%2C%20vel.</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="166" y="1169" w="-1" h="-1" measuredW="70" measuredH="21" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Victor%20said%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Paragraph" x="166" y="1190" w="636" h="72" measuredW="200" measuredH="80" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Turpis%20sociis%20a%20a%20adipiscing%2C%20odio%2C%20porttitor%20mattis%20pellentesque%20urna%20ultrices%3F%20Sed%20facilisis%20platea%20platea%20aliquam%20ut%21%20In%20dolor.%20Urna%2C%20sit%20et%20ultricies%20tortor%2C%20sociis%20habitasse%20amet%3F%20Nec%20auctor%3F%20Sed%20parturient%20sagittis%2C%20tortor%3F%20Et%2C%20dapibus%20velit%20lorem%20urna%2C%20penatibus%20rhoncus%20pellentesque%20platea%20rhoncus%20porta%20sit%2C%20duis%20mauris%3F%20Rhoncus%20odio.%20Enim%20est%20mus%20ultricies%20a%20magnis.%20Tempor%20augue%20placerat%20sit%2C%20ac%20lorem%20aliquet%3F%20Tincidunt%2C%20ut.%20Ridiculus%20ut%20porta%2C%20lacus%20ac%20ultricies%2C%20nascetur%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::SubTitle" x="166" y="1298" w="-1" h="-1" measuredW="131" measuredH="28" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>New%20comment</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Link" x="166" y="857" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Link" x="252" y="950" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Link" x="252" y="1058" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Link" x="344" y="1148" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Link" x="166" y="1262" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::TextArea" x="166" y="1326" w="636" h="140" measuredW="200" measuredH="140" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -19,7 +19,10 @@
 };
 
 exports.newArticle = function (req,res) {
-     if (!req.cookies || req.cookies.articleaccess || 
+
+    "use strict";
+
+    if (!req.cookies || req.cookies.articleaccess ||
             req.cookies.articleacces !== "AOK") {
         res.redirect('/login');
     } else {
@@ -29,7 +32,7 @@ exports.newArticle = function (req,res) {
 
 exports.article = function (req, res) {
 
-    // This is the entry point for adding new articles to the Blog. Nees to 
+    // This is the entry point for adding new articles to the Blog. Nees to
     //  include an authorization mechanism (sessions, cookies, ...)
 
     "use strict";
