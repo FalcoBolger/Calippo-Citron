@@ -8,16 +8,16 @@
  * Module dependencies
  */
  
-var express = require('express');
-//var stylus = require('stylus');
-var routes = require('./routes');
+var express  = require('express'),
+//  stylus = require('stylus'),
+    routes   = require('./routes');
 
 // Still need to investigate multilingual options
 
 //var lingua = require('lingua');
 //var i18next = require('i18next');
 
-//i18next.init(); 
+//i18next.init();
 
 var app = module.exports = express.createServer();
 
@@ -25,7 +25,7 @@ app.configure(function () {
   
     "use strict";
 
-    // Views configuration       
+    // Views configuration
 
     //app.set("view options", { layout: false });     // Change options object later
     app.set('views', __dirname + '/views');
