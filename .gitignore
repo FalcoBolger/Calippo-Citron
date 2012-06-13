@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 node_modules
 .c9*
+docs
+tests
 
 =======
 >>>>>>> 1e324543ffd07406d63eb429a3420d89fb9be079
