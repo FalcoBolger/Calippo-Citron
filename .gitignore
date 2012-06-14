@@ -23,6 +23,7 @@ results
 <<<<<<< HEAD
 npm-debug.log
 .settings
+.livereload
 =======
 node_modules
 npm-debug.log

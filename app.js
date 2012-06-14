@@ -8,9 +8,11 @@
  * Module dependencies
  */
  
-var express  = require('express'),
-//  stylus = require('stylus'),
-    routes   = require('./routes');
+var express = require('express'),
+    routes  = require('./routes'),
+    map     = require ('./maproutecontroller'),
+    http    = require('http'),
+    stylus  = require('stylus');
 
 // Still need to investigate multilingual options
 
@@ -19,28 +21,35 @@ var express  = require('express'),
 
 //i18next.init();
 
-var app = module.exports = express.createServer();
+var app = express();
 
 app.configure(function () {
 
     "use strict";
 
-    // Views configuration
+    /**
+    * Views configuration
+    */
 
-    //app.set("view options", { layout: false });     // Change options object later
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     
+    /**
+    * ExpressJS configuration
+    */
+
     app.use(express.favicon());
-    
     app.use(express.logger('dev'));
+    app.use(express.staticCache({maxObjects: 100, maxLength: 512}));
     
-    //app.use(express.staticCache({maxObjects: 100, maxLength: 512}));
-    
-//    app.use(stylus.middleware({
-//        src: __dirname + '/views/stylus',
-//        dest: __dirname + '/public/stylesheets'
-//    }));
+    /**
+    * Stylus configuration
+    */
+
+    app.use(stylus.middleware({
+        src: __dirname + '/views/stylus',
+        dest: __dirname + '/public/stylesheets'
+    }));
     
     /*
     * Folders:
@@ -51,20 +60,31 @@ app.configure(function () {
     
     app.use(express.static(__dirname + '/public'));
     
-    // Lingua configuration
+    /**
+    * Lingua configuration
+    */
 
     //app.use(lingua(app, {
     //    defaultLocale: 'es-es',
     //    path: __dirname + '/i18n'
     //}));
 
-    // ExpressJS configuration
+    /**
+    * ExpressJS configuration
+    */
 
     app.use(express.cookieParser());    //
     app.use(express.bodyParser());      //
     app.use(express.methodOverride());  //
     app.use(app.router);                //
-    //app.use(express.directory(__dirname + '/public'));
+    app.use(express.directory(__dirname + '/public'));
+    app.use(function (req, res, next) {
+        throw new Error(req.url + ' not found');
+    });
+    app.use(function (err, req, res ,next) {
+        console.log(err);
+        res.send(err.message);
+    });
     
     //app.use(i18next.handle);
         
@@ -94,44 +114,25 @@ app.configure('production', function(){
  * Routes
  */
 
-// Get the initial view of the application, the 'index.html' static page
-//  corresponding to the 'Home' link
+app.get('/', routes.index);                 // Show home
 
-app.get('/', routes.index);
+var prefixes = ['article'];
 
-// Show the login page
+app.get('/ceremony', routes.ceremony);      // Show the ceremony page
 
-app.get('/login', routes.getlogin);
+app.get('/reception', routes.reception);    // Show the reception page
 
-// Get the information related to the Bouddhist ceremony, the 'ceremony.html'
-//  page corresponding to the 'Ceremony' link
+app.get('/login', routes.getlogin);         // Show the login page
 
-app.get('/ceremony', routes.ceremony);
+app.post('/login', routes.postLogin);       // Login to the application
 
-// Get the information related to the Reception, the 'reception.html' page
-//  corresponding to the 'Reception' link
+app.get('/articles', routes.articles);      // Show all the created articles
 
-app.get('/reception', routes.reception);
+app.get('/article/new', routes.newArticle); // Show
 
-// Login to the application
+app.post('/article', routes.article);       // Create a new article
 
-app.post('/login', routes.postLogin);
+http.createServer(app).listen(process.env.PORT || 3000);
 
-// Read all the created Blogposts, the 'news.html' dynamic page corresponding to
-//  the 'News' link
-
-app.get('/articles', routes.articles);
-
-// Create a new article page
-
-app.get('/article/new', routes.newArticle);
-
-// Create a new Blogpost
-
-app.post('/article', routes.article);
-
-app.listen(process.env.PORT || 3000, function(){
-    "use strict";
-
-    console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
-});
+console.log("Express server listening on port %d in %s mode",
+        app.address().port, app.settings.env);

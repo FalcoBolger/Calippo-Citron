@@ -2,9 +2,9 @@
  * GET articles page.
  */
  
- var articles = [];
+var articles = [];
  
- exports.articles = function (req, res) {
+exports.articles = function (req, res) {
     
     // Here the DB will requested to provide all the articles stored in it, and
     //  the use of pagination will be compulsory.

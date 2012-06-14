@@ -2,7 +2,7 @@
  * GET login page.
  */
  
- var users = [
+var users = [
     // Privileged user
     {
         id: "calippo.citron",
@@ -19,7 +19,7 @@
     }
 ];
  
- exports.getLogin = function (req, res) {
+exports.getLogin = function (req, res) {
     
     "use strict";
     
